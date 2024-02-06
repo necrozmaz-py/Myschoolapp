@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Dashboard!"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/motivationLogTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motivation Log:"
+        android:textStyle="bold"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <RatingBar
+        android:id="@+id/motivationRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="10"
+        android:stepSize="1"
+        android:layout_below="@id/motivationLogTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/reasoningEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/motivationRatingBar"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Reasoning"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/logMotivationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Motivation"
+        android:layout_below="@id/reasoningEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/updatesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updates:"
+        android:textStyle="bold"
+        android:layout_below="@id/logMotivationButton"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/updatesContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updatesTextView"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/adminDashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/motivationSummaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motivation Summary"
+        android:textStyle="bold"
+        android:layout_below="@id/adminDashboardTitle"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/motivationSummaryContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/motivationSummaryTextView"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/viewAllMotivationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Motivations"
+        android:layout_below="@id/motivationSummaryContentTextView"
+        android:layout_marginTop="16dp"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+    <TextView
+        android:id="@+id/studentListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student List"
+        android:textStyle="bold"
+        android:layout_below="@id/viewAllMotivationsButton"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/studentListContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentListTextView"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/updateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Update"
+        android:layout_below="@id/studentListContentTextView"
+        android:layout_marginTop="16dp"
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <Button
+        android:id="@+id/sendUpdateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Update"
+        android:layout_below="@id/updateEditText"
+        android:layout_marginTop="16dp"
+        tools:ignore="HardcodedText" />
+
+
+    <!-- Add this button to your existing layout -->
+    <Button
+        android:id="@+id/viewAllMotivationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Motivations"
+        android:layout_below="@id/studentListContentTextView"
+        android:layout_marginTop="16dp"
+        tools:ignore="DuplicateIds,HardcodedText,VisualLintButtonSize" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_admin_login.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AdminLoginActivity">
+
+    <EditText
+        android:id="@+id/adminEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:hint="Admin Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/adminPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminEmailEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:hint="Admin Password"
+        android:inputType="textPassword"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/adminLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminPasswordEditText"
+        android:layout_marginTop="16dp"
+        android:text="Admin Login"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+</RelativeLayout>
